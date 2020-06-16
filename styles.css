@@ -1,0 +1,147 @@
+/*  ===========================================
+    ===========================================
+
+    Project: Advanced CSS and SCSS
+
+    Notes: Gold Coast Tours Project
+
+
+    Colour Palette:
+    ---------------
+    Blue example: rgb(38, 38, 159)
+    Green example: rgb(99, 240, 99)  
+
+    ===========================================
+    ===========================================  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*Equivalent to 10px*/
+}
+
+body {
+  margin: 1rem;
+  box-sizing: border-box;
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*========================================================================/
+============================== HEADER STYLING ============================
+/========================================================================*/
+
+.main-header {
+  height: 70vh;
+  position: relative;
+  margin-bottom: 1rem; /*same as .section-go*/
+}
+
+.hero {
+  width: 100%;
+  max-width: 125rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.bg-image {
+  position: relative;
+}
+
+.paddle {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  background-image: url(img/image2.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(82% 0, 0 0, 0 100%, 18% 100%);
+}
+
+.hotel {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  background-image: url(img/image4.jpg);
+  background-size: cover;
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 18% 100%);
+}
+
+.brand,
+.btn-main {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+.btn-main:link,
+.btn-main:visited {
+  text-decoration: none;
+  background-color: orangered;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 6rem;
+  -webkit-border-radius: 6rem;
+  -moz-border-radius: 6rem;
+  -ms-border-radius: 6rem;
+  -o-border-radius: 6rem;
+}
+
+/*========================================================================/
+============================== MAIN STYLING ==============================
+/========================================================================*/
+
+.main-container {
+  border: 1px solid yellowgreen;
+}
+
+.section-go {
+  border: 1px solid blue;
+  position: relative;
+  margin-bottom: 1rem; /*same as .main-header*/
+}
+
+.land-active,
+.water-active,
+.booking {
+  display: grid;
+  padding: 5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+.card-style1,
+.card-style2 {
+  border: 1px solid red;
+  height: 20rem;
+}
+
+/*========================================================================/
+============================== FORM STYLING ==============================
+/========================================================================*/
+
+.form-card {
+  border: 1px solid purple;
+  height: 3rem;
+  padding: 1rem 0;
+}
+
+/*========================================================================/
+============================= FOOTER STYLING =============================
+/========================================================================*/
+
+.footer-end {
+  border: 1px solid green;
+  height: 3rem;
+}
