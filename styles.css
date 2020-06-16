@@ -1,9 +1,10 @@
 /*  ===========================================
     ===========================================
 
-    Project: Advanced CSS and SCSS
+    Project: Gold Coast Tours Project
 
-    Notes: Gold Coast Tours Project
+    Notes:  Advanced CSS and SCSS - Udemy
+    
 
 
     Colour Palette:
@@ -49,12 +50,38 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  -o-transform: translate(-50%, -60%);
 }
+
+.brand,
+.btn-main {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+  animation: toTheTop 0.7s ease-out 1.5s forwards;
+  -webkit-animation: toTheTop 0.7s ease-out 1.5s forwards;
+  opacity: 0;
+}
+
+@keyframes toTheTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+    -webkit-transform: translateY(10rem);
+    -moz-transform: translateY(10rem);
+    -ms-transform: translateY(10rem);
+    -o-transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*==========HEADER IMAGES BEGINS============*/
 
 .bg-image {
   position: relative;
@@ -68,21 +95,83 @@ body {
   background-position: top;
   background-size: cover;
   clip-path: polygon(82% 0, 0 0, 0 100%, 18% 100%);
+  animation: toTheRight 0.8s ease 0.5s forwards;
+  -webkit-animation: toTheRight 0.8s ease 0.5s forwards;
+  opacity: 0;
 }
 
-.hotel {
+.boat {
   width: 100%;
   height: 70vh;
   position: absolute;
   background-image: url(img/image4.jpg);
   background-size: cover;
   clip-path: polygon(82% 0, 100% 0, 100% 100%, 18% 100%);
+  animation: toTheLeft 0.8s ease 1.1s forwards;
+  -webkit-animation: toTheLeft 0.8s ease 1.1s forwards;
+  opacity: 0;
 }
 
-.brand,
+@keyframes toTheRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-6rem);
+    -webkit-transform: translateX(-6rem);
+    -moz-transform: translateX(-6rem);
+    -ms-transform: translateX(-6rem);
+    -o-transform: translateX(-6rem);
+  }
+  80% {
+    transform: translateX(0.5rem);
+    -webkit-transform: translateX(0.5rem);
+    -moz-transform: translateX(0.5rem);
+    -ms-transform: translateX(0.5rem);
+    -o-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+@keyframes toTheLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(6rem);
+    -webkit-transform: translateX(6rem);
+    -moz-transform: translateX(6rem);
+    -ms-transform: translateX(6rem);
+    -o-transform: translateX(6rem);
+  }
+  80% {
+    transform: translateX(-0.5rem);
+    -webkit-transform: translateX(-0.5rem);
+    -moz-transform: translateX(-0.5rem);
+    -ms-transform: translateX(-0.5rem);
+    -o-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+/*==========HEADER CTA BUTTON BEGINS============*/
+
 .btn-main {
   margin: 1.5rem 0;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0; /*same as .brand*/
+  animation: toTheTop 0.7s ease-out 1.5s forwards;
+  -webkit-animation: toTheTop 0.7s ease-out 1.5s forwards;
+  opacity: 0;
 }
 
 .btn-main:link,
@@ -96,6 +185,21 @@ body {
   -moz-border-radius: 6rem;
   -ms-border-radius: 6rem;
   -o-border-radius: 6rem;
+}
+
+@keyframes toTheTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+    -webkit-transform: translateY(10rem);
+    -moz-transform: translateY(10rem);
+    -ms-transform: translateY(10rem);
+    -o-transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*========================================================================/
