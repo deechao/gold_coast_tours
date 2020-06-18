@@ -259,12 +259,56 @@ body {
   margin: 3rem 0;
   padding: 2rem 0.5rem;
   border: 2px solid red;
+  display: relative;
 }
 
 .tour {
   padding-bottom: 1rem;
   font-size: 1.7rem;
   font-weight: bolder;
+}
+
+.info {
+  padding: 2rem 0;
+}
+
+.reviews {
+  padding: 1rem 2rem;
+}
+
+.rev1 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  background-color: aqua;
+}
+
+.rev1:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  z-index: 1000;
+}
+
+.rev2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rev3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .section-go {
