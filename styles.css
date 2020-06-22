@@ -273,23 +273,9 @@ body {
   padding: 2rem 0;
 }
 
-.img-container {
-  border: 3px solid green;
-  width: 30rem;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-
-.reviews {
+/*.reviews {
   padding: 1rem 2rem;
-}
+}*/
 
 .rev1,
 .rev2,
@@ -298,26 +284,45 @@ body {
   height: 10rem;
 }
 
+.land-img {
+  width: 100%;
+  height: 100%;
+}
+
 .rev1 {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  background-color: aqua;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   z-index: 10;
 }
 
 .rev2 {
   position: absolute;
   top: 65%;
-  left: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   background-color: chartreuse;
   z-index: 5;
 }
 
 .rev3 {
   position: absolute;
-  top: 68%;
-  left: 35%;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   background-color: crimson;
   z-index: 1;
 }
