@@ -255,94 +255,82 @@ body {
   position: relative;
 }
 
+/*-----LAND SIDE LIFE TOUR SECTION STYLING-----*/
+
 .tour-info {
+  position: relative;
   margin: 3rem 0;
   padding: 2rem 1rem;
-  height: 40rem;
-  border: 2px solid red;
-  display: relative;
+  height: 60rem;
 }
 
-.tour {
+.tour-info-heading {
   padding-bottom: 1rem;
   font-size: 1.7rem;
   font-weight: bolder;
 }
 
-.info {
+.-tour-info-p {
   padding: 2rem 0;
 }
 
-/*.reviews {
-  padding: 1rem 2rem;
-}*/
+/*-----LAND SIDE IMAGES STYLING-----*/
 
-.rev1,
-.rev2,
-.rev3 {
-  width: 18rem;
-  height: 10rem;
-}
-
-.land-img {
-  width: 100%;
-  height: 100%;
-}
-
-.rev1 {
+.land-container {
+  width: 55%;
+  height: 70%;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
-.rev2 {
-  position: absolute;
-  top: 65%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  background-color: chartreuse;
+.land-container-img {
+  width: 100%;
+  outline-offset: 1rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   z-index: 5;
 }
 
-.rev3 {
+.land-img1 {
   position: absolute;
-  top: 70%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  background-color: crimson;
-  z-index: 1;
+  top: 35%;
+  left: 0;
 }
 
-/*.rev1:hover,
-.rev2:hover,
-.rev3:hover {
-  background-color: blueviolet;
-  cursor: pointer;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+.land-img2 {
+  position: absolute;
+  top: 45%;
+  left: -25%;
+}
+
+.land-img3 {
+  position: absolute;
+  top: 55%;
+  right: -25%;
+}
+
+.land-img1:hover,
+.land-img2:hover,
+.land-img3:hover {
   transform: scale(1.15);
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
-}*/
+  outline: 0.5rem solid gold;
+  z-index: 10;
+}
+
+/*----------SECTION----------*/
 
 .section-go {
   position: relative;
