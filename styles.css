@@ -451,6 +451,56 @@ body {
   clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
 }
 
+/*--------------WATERFRONT FUN SECTION---------------*/
+
+.card-back-architect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/architect.jpg);
+  background-position: bottom;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
+}
+
+.card-back-kayak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/kayak.jpg);
+  background-position: bottom;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
+}
+
+.card-back-sail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/sail.jpg);
+  background-position: bottom;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
+}
+
+.card-back-jetski {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/jetski.jpg);
+  background-position: bottom;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
+}
+
 .card:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
