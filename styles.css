@@ -256,68 +256,15 @@ body {
 .main-container {
   position: relative;
 }
-/*.skew-divider {
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  border: 2px solid red;
-  width: 20rem;
-  height: 6rem;
-  z-index: -1;
-}
-
-.divider1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3rem;
-  height: 5rem;
-  background-color: gold;
-  transform: skewX(-25deg);
-  -webkit-transform: skewX(-25deg);
-  -moz-transform: skewX(-25deg);
-  -ms-transform: skewX(-25deg);
-  -o-transform: skewX(-25deg);
-  z-index: -1;
-}
-
-.divider2 {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  width: 2rem;
-  height: 5rem;
-  background-color: gold;
-  transform: skewX(-25deg);
-  -webkit-transform: skewX(-25deg);
-  -moz-transform: skewX(-25deg);
-  -ms-transform: skewX(-25deg);
-  -o-transform: skewX(-25deg);
-  z-index: -1;
-}
-
-.divider3 {
-  position: absolute;
-  top: 0;
-  left: 37%;
-  width: 1rem;
-  height: 5rem;
-  background-color: gold;
-  transform: skewX(-25deg);
-  -webkit-transform: skewX(-25deg);
-  -moz-transform: skewX(-25deg);
-  -ms-transform: skewX(-25deg);
-  -o-transform: skewX(-25deg);
-  z-index: -1;
-}*/
 
 /*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
 
 .tour-info {
   position: relative;
-  margin: 3rem 0;
   padding: 2rem 1rem;
   height: 50rem;
+  /*background-color: gold;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);*/
 }
 
 .tour-info-heading {
@@ -327,53 +274,8 @@ body {
   font-family: "Permanent Marker", cursive;
 }
 
-.skew-design {
-  position: relative;
-  margin: 1rem auto;
-  width: 28rem;
-}
-
-.skew-design-line {
-  position: absolute;
-  transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
-  z-index: -1;
-}
-
-.line1,
-.line1-a,
-.line1-b {
-  width: 3rem;
-  height: 40%;
-  top: 25%;
-  background-color: gold;
-}
-
-.line1 {
-  left: 0;
-}
-
-.line1-a {
-  left: 15%;
-}
-
-.line1-b {
-  left: 30%;
-}
-
-.line2 {
-  top: 48%;
-  right: -2%;
-  width: 23rem;
-  height: 30%;
-  border: 0.3rem solid gold;
-}
-
-.-tour-info-p {
-  padding: 2rem 0;
+.tour-info-p {
+  margin: 1rem 0;
 }
 
 /*-----LANDSIDE/WATERFRONT FUN IMAGES STYLING-----*/
@@ -436,7 +338,7 @@ body {
 
 .section-go {
   position: relative;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .section-go .water-active #vid,
