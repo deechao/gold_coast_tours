@@ -278,9 +278,10 @@ body {
   margin: 1rem 0;
 }
 
-/*-----LANDSIDE/WATERFRONT FUN IMAGES STYLING-----*/
+/*-----LANDSIDE/WATERFRONT SECTION IMAGES STYLING-----*/
 
-.land-container {
+.land-container,
+.water-container {
   width: 55%;
   height: 70%;
   position: absolute;
@@ -293,7 +294,8 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-.land-container-img {
+.land-container-img,
+.water-container-img {
   width: 100%;
   outline-offset: 1rem;
   transition: all 0.2s;
@@ -304,19 +306,22 @@ body {
   z-index: 5;
 }
 
-.land-img1 {
+.land-img1,
+.water-img1 {
   position: absolute;
   top: 45%;
   left: 0;
 }
 
-.land-img2 {
+.land-img2,
+.water-img2 {
   position: absolute;
   top: 55%;
   left: -25%;
 }
 
-.land-img3 {
+.land-img3,
+.water-img3 {
   position: absolute;
   top: 65%;
   right: -25%;
@@ -324,7 +329,10 @@ body {
 
 .land-img1:hover,
 .land-img2:hover,
-.land-img3:hover {
+.land-img3:hover,
+.water-img1:hover,
+.water-img2:hover,
+.water-img3:hover {
   transform: scale(1.15);
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
@@ -363,7 +371,6 @@ body {
 }
 
 .card,
-.card-style2,
 .card-style3 {
   height: 40rem;
   z-index: 1;
@@ -380,7 +387,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.card-front {
+.card-front-land {
   position: absolute;
   background-color: rgba(235, 235, 234, 0.6);
   width: 100%;
@@ -452,6 +459,15 @@ body {
 }
 
 /*--------------WATERFRONT FUN SECTION---------------*/
+
+.card-front-water {
+  position: absolute;
+  background-color: rgba(202, 248, 248, 0.633);
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 
 .card-back-architect {
   position: absolute;
