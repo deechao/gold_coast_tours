@@ -485,7 +485,7 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
   color: rgb(253, 251, 251);
-  text-shadow: 0.3rem 0.3rem 0.3rem black;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
   padding: 1rem 3rem;
 }
 
@@ -586,4 +586,70 @@ body {
 
 .footer-end {
   height: 3rem;
+}
+
+/*========================================================================/
+===================== MEDIA QUERY / MIN-WIDTH 1200 PX ====================
+/========================================================================*/
+
+@media screen and (min-width: 1200px) {
+  .brand {
+    top: 40%;
+  }
+
+  .main-title,
+  .sub-title {
+    text-shadow: 0.5rem 0.5rem 0.5rem #000;
+    margin: 2rem 0;
+  }
+
+  .main-title {
+    font-size: 5rem;
+  }
+
+  .sub-title {
+    font-size: 3rem;
+  }
+
+  .gold {
+    font-size: 6.5rem;
+  }
+
+  .btn-cta:link,
+  .btn-cta:visited {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .section-go {
+    margin: 4rem 0;
+  }
+
+  /*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
+
+  .tour-info {
+    padding: 5rem 1rem;
+    height: 90rem;
+  }
+
+  .tour-info-heading {
+    font-size: 5rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgb(113, 111, 111);
+  }
+
+  .tour-info-p {
+    margin: 3rem 0;
+    padding: 0 3rem;
+    font-size: 2rem;
+  }
+
+  .land-container,
+  .water-container {
+    max-width: 50rem;
+    top: 40%;
+  }
+
+  .card {
+    margin: 10rem 0;
+  }
 }
