@@ -257,6 +257,11 @@ body {
   position: relative;
 }
 
+.section-go {
+  position: relative;
+  margin: 2rem 0;
+}
+
 /*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
 
 .tour-info {
@@ -267,9 +272,10 @@ body {
 
 .tour-info-heading {
   padding: 2rem 0;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: bolder;
   font-family: "Permanent Marker", cursive;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(113, 111, 111);
 }
 
 .tour-info-p {
@@ -281,10 +287,12 @@ body {
 .land-container,
 .water-container {
   width: 55%;
+  max-width: 40rem;
   height: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin: 3rem 0;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -307,22 +315,25 @@ body {
 .land-img1,
 .water-img1 {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 0;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .land-img2,
 .water-img2 {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: -25%;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .land-img3,
 .water-img3 {
   position: absolute;
-  top: 65%;
+  top: 60%;
   right: -25%;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .land-img1:hover,
@@ -331,21 +342,16 @@ body {
 .water-img1:hover,
 .water-img2:hover,
 .water-img3:hover {
-  transform: scale(1.15);
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  -o-transform: scale(1.15);
+  transform: scale(1.15) rotate(5deg);
+  -webkit-transform: scale(1.15) rotate(5deg);
+  -moz-transform: scale(1.15) rotate(5deg);
+  -ms-transform: scale(1.15) rotate(5deg);
+  -o-transform: scale(1.15) rotate(5deg);
   outline: 0.5rem solid gold;
   z-index: 10;
 }
 
 /*----------SECTION----------*/
-
-.section-go {
-  position: relative;
-  margin: 2rem 0;
-}
 
 .section-go .water-active #vid,
 .section-go .land-active #vid {
@@ -396,27 +402,16 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
+/*--------------LANDSIDE LIFE SECTION---------------*/
+
 .card-front-land {
   position: absolute;
-  background-color: rgba(235, 235, 234, 0.6);
+  background-color: rgba(235, 235, 234, 0.7);
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   font-size: 2rem;
-}
-
-.land-p,
-.water-p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: rgb(253, 251, 251);
-  text-shadow: 0.3rem 0.3rem 0.3rem black;
-  padding: 1rem;
 }
 
 .card-back {
@@ -481,11 +476,24 @@ body {
   clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
 }
 
+.land-p,
+.water-p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: rgb(253, 251, 251);
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
+  padding: 1rem 3rem;
+}
+
 /*--------------WATERFRONT FUN SECTION---------------*/
 
 .card-front-water {
   position: absolute;
-  background-color: rgba(202, 248, 248, 0.633);
+  background-color: rgba(202, 248, 248, 0.7);
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -548,11 +556,9 @@ body {
   -o-transform: rotateY(180deg);
 }
 
-/*==============CARD STYLE 2 STYLING================*/
-
-.card-style2 {
-  background-color: rgba(202, 248, 248, 0.633);
-}
+/*========================================================================/
+============================== FORM STYLING ==============================
+/========================================================================*/
 
 .card-style3 {
   width: 25rem;
@@ -562,20 +568,16 @@ body {
 }
 
 #booking {
+  margin: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-/*========================================================================/
-============================== FORM STYLING ==============================
-/========================================================================*/
-
 .form-card {
-  border: 1px solid purple;
-  height: 10rem;
-  margin: 1rem 0;
-  padding: 1rem 0;
+  height: 20rem;
+  margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 /*========================================================================/
