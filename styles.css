@@ -259,7 +259,7 @@ body {
 
 .section-go {
   position: relative;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
@@ -280,6 +280,13 @@ body {
 
 .tour-info-p {
   margin: 1rem 0;
+  padding: 0 1rem;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+.tour-info-water {
+  height: 65rem;
 }
 
 /*-----LANDSIDE/WATERFRONT SECTION IMAGES STYLING-----*/
@@ -592,7 +599,7 @@ body {
 ===================== MEDIA QUERY / MIN-WIDTH 1200 PX ====================
 /========================================================================*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1198px) {
   .brand {
     top: 40%;
   }
