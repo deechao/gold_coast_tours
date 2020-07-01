@@ -153,10 +153,6 @@ body {
   font-size: 2.3rem;
 }
 
-/*.sub-title {
-  color: gold;
-}*/
-
 .gold {
   color: gold;
   font-size: 3.5rem;
@@ -264,10 +260,19 @@ body {
 
 /*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
 
-.tour-info {
+.tour-info-land,
+.tour-info-water {
   position: relative;
   padding: 2rem 1rem;
-  height: 50rem;
+  height: 65rem;
+}
+
+.tour-info-land {
+  height: 55rem;
+}
+
+.tour-info-water {
+  height: 65rem;
 }
 
 .tour-info-heading {
@@ -283,10 +288,6 @@ body {
   padding: 0 1rem;
   text-align: justify;
   text-indent: 2rem;
-}
-
-.tour-info-water {
-  height: 65rem;
 }
 
 /*-----LANDSIDE/WATERFRONT SECTION IMAGES STYLING-----*/
@@ -570,15 +571,19 @@ body {
 .card-style3 {
   width: 25rem;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
   background-color: blueviolet;
 }
 
 #booking {
-  margin: 3rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.booking-header {
+  margin: 5rem 0 2rem;
 }
 
 .form-card {
