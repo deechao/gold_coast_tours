@@ -32,8 +32,8 @@ body {
 }
 
 /*========================================================================/
-          ============================== HEADER STYLING ============================
-          /========================================================================*/
+============================== HEADER STYLING ============================
+/========================================================================*/
 
 .main-header {
   height: 70vh;
@@ -193,7 +193,7 @@ body {
   }
 }
 
-/*==========STYLING FOR BTN-CTA BEGINS============*/
+/*===========BTN-CTA STYLING============*/
 
 .btn-cta:link,
 .btn-cta:visited {
@@ -248,8 +248,8 @@ body {
 }
 
 /*========================================================================/
-    ============================== MAIN STYLING ==============================
-    /========================================================================*/
+============================== MAIN STYLING ==============================
+/========================================================================*/
 
 .main-container {
   position: relative;
@@ -257,24 +257,10 @@ body {
 
 .section-go {
   position: relative;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
-/*-----LANDSIDE LIFE/WATERFRONT FUN TOURS SECTION STYLING-----*/
-
-/*.tour-info-land,
-    .tour-info-water {
-      position: relative;
-      padding: 2rem 1rem;
-    }
-    
-    .tour-info-land {
-      height: 55rem;
-    }
-    
-    .tour-info-water {
-      height: 65rem;
-    }*/
+/*-----LANDSIDE LIFE/WATERFRONT FUN TOUR SECTION STYLING-----*/
 
 .tour-info-heading {
   padding: 2rem 0;
@@ -285,13 +271,14 @@ body {
 }
 
 .tour-info-p {
-  margin: 1rem 0;
+  max-width: 80rem;
+  margin: 2rem auto 0;
   padding: 0 1rem;
   text-align: justify;
   text-indent: 2rem;
 }
 
-/*----------SECTION----------*/
+/*----------BG VIDEO FOR LAND/WATER SECTION STYLING----------*/
 
 .section-go .water-active #vid,
 .section-go .land-active #vid {
@@ -313,6 +300,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 3rem;
 }
+
+/*-------------LAND/WATER CARD STYLING-------------*/
 
 .card,
 .card-booking {
@@ -342,7 +331,7 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-/*--------------LANDSIDE LIFE SECTION---------------*/
+/*--------------LANDSIDE HOVER ROTATE CARD SECTION STYLING---------------*/
 
 .card-front-land {
   position: absolute;
@@ -416,20 +405,7 @@ body {
   clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 32%);
 }
 
-.land-p,
-.water-p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: rgb(253, 251, 251);
-  text-shadow: 0.2rem 0.2rem 0.2rem black;
-  padding: 1rem 3rem;
-}
-
-/*--------------WATERFRONT FUN SECTION---------------*/
+/*--------------WATERFRONT HOVER ROTATE CARD SECTION STYLING---------------*/
 
 .card-front-water {
   position: absolute;
@@ -496,7 +472,22 @@ body {
   -o-transform: rotateY(180deg);
 }
 
-/*-----LANDSIDE LIFE HOVER IMGS SECTION STYLING-----*/
+/*---------LAND/WATER CARD BACKSIDE P INFO STYLING--------*/
+
+.land-p,
+.water-p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: rgb(253, 251, 251);
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+  padding: 1rem 3rem;
+}
+
+/*---------HOVER SCALE IMGS SECTION STYLING---------*/
 
 .container-img {
   margin: 0 auto;
@@ -509,17 +500,20 @@ body {
   width: 55%;
 }
 
+.hover-img1,
 .hover-img2,
 .hover-img3,
 .hover-img4,
 .hover-img5 {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+  outline-offset: 1rem;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 5;
 }
 
 .hover-img1 {
@@ -529,89 +523,60 @@ body {
 }
 
 .hover-img2 {
-  left: 45%;
+  top: 15%;
+  left: 22%;
 }
 
 .hover-img3 {
-  left: 50%;
+  top: 25%;
+  left: 34%;
 }
 
 .hover-img4 {
-  left: 55%;
+  top: 35%;
+  left: 25%;
 }
 .hover-img5 {
-  left: 60%;
+  top: 45%;
+  left: 10%;
 }
 
-/*
-    .water-container {
-      width: 55%;
-      height: 70%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: 3rem 0;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-    }
-    
-    .land-container-img,
-    .water-container-img {
-      width: 100%;
-      outline-offset: 1rem;
-      transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      z-index: 5;
-    }
-    
-    .land-img1,
-    .water-img1 {
-      position: absolute;
-      top: 40%;
-      left: 0;
-      box-shadow: 0.5rem 0.5rem 0.5rem black;
-    }
-    
-    .land-img2,
-    .water-img2 {
-      position: absolute;
-      top: 50%;
-      left: -25%;
-      box-shadow: 0.5rem 0.5rem 0.5rem black;
-    }
-    
-    .land-img3,
-    .water-img3 {
-      position: absolute;
-      top: 60%;
-      right: -25%;
-      box-shadow: 0.5rem 0.5rem 0.5rem black;
-    }
-    
-    .land-img1:hover,
-    .land-img2:hover,
-    .land-img3:hover,
-    .water-img1:hover,
-    .water-img2:hover,
-    .water-img3:hover {
-      transform: scale(1.15) rotate(5deg);
-      -webkit-transform: scale(1.15) rotate(5deg);
-      -moz-transform: scale(1.15) rotate(5deg);
-      -ms-transform: scale(1.15) rotate(5deg);
-      -o-transform: scale(1.15) rotate(5deg);
-      outline: 0.5rem solid gold;
-      z-index: 10;
-    }*/
+.hover-img1:hover,
+.hover-img2:hover,
+.hover-img3:hover,
+.hover-img4:hover,
+.hover-img5:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  outline: 0.5rem solid gold;
+  z-index: 10;
+}
+
+.hover-img1:hover,
+.hover-img3:hover,
+.hover-img5:hover {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+
+.hover-img2:hover,
+.hover-img4:hover {
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+}
 
 /*========================================================================/
-    ========================= BOOKING CARDS STYLING ===========================
-    /========================================================================*/
+========================= BOOKING CARD STYLING ===========================
+/========================================================================*/
 
 .card-booking {
   width: 25rem;
@@ -632,8 +597,8 @@ body {
 }
 
 /*========================================================================/
-    ============================== FORM STYLING ==============================
-    /========================================================================*/
+============================== FORM STYLING ==============================
+/========================================================================*/
 
 .form-card {
   height: 30rem;
@@ -643,8 +608,8 @@ body {
 }
 
 /*========================================================================/
-    ============================= FOOTER STYLING =============================
-    /========================================================================*/
+============================= FOOTER STYLING =============================
+/========================================================================*/
 
 .footer-end {
   height: 3rem;
