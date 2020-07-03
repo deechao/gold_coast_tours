@@ -286,13 +286,23 @@ body {
   text-indent: 1.75rem;
 }
 
-.tour-text {
+.tour-text-land,
+.tour-text-water {
   color: white;
-  text-shadow: 0 0 0.5rem gold;
+
   z-index: -1;
 }
 
-.text1 {
+.tour-text-land {
+  text-shadow: 0 0 0.5rem gold;
+}
+
+.tour-text-water {
+  text-shadow: 0 0 0.5rem rgb(134, 247, 247);
+}
+
+.text1,
+.text4 {
   font-size: 8rem;
   position: absolute;
   top: 25%;
@@ -304,7 +314,8 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-.text2 {
+.text2,
+.text5 {
   font-size: 5rem;
   position: absolute;
   top: 50%;
@@ -316,7 +327,8 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-.text3 {
+.text3,
+.text6 {
   font-size: 10rem;
   position: absolute;
   top: 75%;
