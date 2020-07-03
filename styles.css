@@ -257,7 +257,7 @@ body {
 
 .section-go {
   position: relative;
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 
 /*-----LANDSIDE LIFE/WATERFRONT FUN TOUR SECTION STYLING-----*/
@@ -266,7 +266,7 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 80rem;
-  height: 30rem;
+  height: 35rem;
   overflow: hidden;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .tour-info-p {
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   font-size: 1.2rem;
   text-align: justify;
   text-indent: 1.75rem;
@@ -289,23 +289,22 @@ body {
 .tour-text-land,
 .tour-text-water {
   color: white;
-
   z-index: -1;
 }
 
 .tour-text-land {
-  text-shadow: 0 0 0.5rem gold;
+  text-shadow: 0 0 0.3rem gold;
 }
 
 .tour-text-water {
-  text-shadow: 0 0 0.5rem rgb(134, 247, 247);
+  text-shadow: 0 0 0.3rem rgb(126, 252, 252);
 }
 
 .text1,
 .text4 {
   font-size: 8rem;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -318,7 +317,7 @@ body {
 .text5 {
   font-size: 5rem;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -331,7 +330,7 @@ body {
 .text6 {
   font-size: 10rem;
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -572,7 +571,7 @@ body {
 }
 
 .tour-guide-person {
-  width: 55%;
+  width: 45%;
 }
 
 .tour-guide-person img {
@@ -673,10 +672,22 @@ body {
 ========================= BOOKING CARD STYLING ============================
 /========================================================================*/
 
+.section-go-booking {
+  margin-top: 5rem;
+  border: 2px solid blue;
+}
+
 .booking-header {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: bold;
+}
+
+#booking {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card-booking {
@@ -692,18 +703,11 @@ body {
 }
 
 .card-booking:hover {
-  transform: translateY(-2rem);
-  -webkit-transform: translateY(-2rem);
-  -moz-transform: translateY(-2rem);
-  -ms-transform: translateY(-2rem);
-  -o-transform: translateY(-2rem);
-}
-
-#booking {
-  margin: 4rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  transform: translateY(-3rem);
+  -webkit-transform: translateY(-3rem);
+  -moz-transform: translateY(-3rem);
+  -ms-transform: translateY(-3rem);
+  -o-transform: translateY(-3rem);
 }
 
 /*========================================================================/
