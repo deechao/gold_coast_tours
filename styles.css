@@ -497,7 +497,21 @@ body {
 
 .tour-guide {
   border: 2px solid green;
-  height: 40rem;
+  width: 100%;
+}
+
+.tour-guide-heading {
+  padding: 2rem 0;
+}
+
+.tour-guide-person {
+  width: 85%;
+  height: 20rem;
+}
+
+.tour-guide-person img {
+  width: 100%;
+  height: 100%;
 }
 
 /*========================================================================/
