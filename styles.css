@@ -265,7 +265,7 @@ body {
 .tour-info {
   position: relative;
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 90rem;
   height: 35rem;
   overflow: hidden;
 }
@@ -297,7 +297,7 @@ body {
 }
 
 .tour-text-water {
-  text-shadow: 0 0 0.3rem rgb(126, 252, 252);
+  text-shadow: 0 0 0.3rem rgb(8, 247, 247);
 }
 
 .text1,
@@ -357,7 +357,7 @@ body {
 .water-active {
   position: relative;
   display: grid;
-  padding: 8rem 3rem;
+  padding: 10rem 3rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 3rem;
 }
@@ -371,17 +371,14 @@ body {
 }
 
 .card {
+  font-size: 2rem;
+  position: relative;
+  transform-style: preserve-3d;
   transition: all 0.7s;
   -webkit-transition: all 0.7s;
   -moz-transition: all 0.7s;
   -ms-transition: all 0.7s;
   -o-transition: all 0.7s;
-}
-
-.card {
-  font-size: 2rem;
-  position: relative;
-  transform-style: preserve-3d;
 }
 
 .card-name {
@@ -534,6 +531,7 @@ body {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 /*---------LAND/WATER CARD BACKSIDE P INFO STYLING--------*/
@@ -556,25 +554,36 @@ body {
 /========================================================================*/
 
 .tour-guide {
-  border: 2px solid green;
-  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .tour-guide-heading {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
+  font-size: 2rem;
 }
 
-.tour-guide-people {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.tour-guide-container {
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .tour-guide-person {
-  width: 45%;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-.tour-guide-person img {
+.tour-guide-p {
+  padding: 1rem;
+  width: 100%;
+}
+
+.guide-img-contain {
+  width: 100%;
+}
+
+.guide-img {
   width: 100%;
   height: 100%;
   padding: 0.5rem;
@@ -646,6 +655,7 @@ body {
 .hover-img4:hover,
 .hover-img5:hover {
   outline: 0.5rem solid gold;
+  cursor: pointer;
   z-index: 10;
 }
 
@@ -708,6 +718,7 @@ body {
   -moz-transform: translateY(-3rem);
   -ms-transform: translateY(-3rem);
   -o-transform: translateY(-3rem);
+  cursor: pointer;
 }
 
 /*========================================================================/
