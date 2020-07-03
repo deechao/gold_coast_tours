@@ -264,6 +264,8 @@ body {
 
 .tour-info {
   position: relative;
+  margin: 0 auto;
+  max-width: 80rem;
   height: 30rem;
   overflow: hidden;
 }
@@ -286,14 +288,14 @@ body {
 
 .tour-text {
   color: white;
-  text-shadow: 0 0 0.5rem red;
+  text-shadow: 0 0 0.5rem gold;
   z-index: -1;
 }
 
 .text1 {
-  font-size: 10rem;
+  font-size: 8rem;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -303,10 +305,10 @@ body {
 }
 
 .text2 {
-  font-size: 9rem;
+  font-size: 5rem;
   position: absolute;
-  top: 60%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -315,15 +317,15 @@ body {
 }
 
 .text3 {
-  font-size: 12rem;
+  font-size: 10rem;
   position: absolute;
-  top: 80%;
-  right: -5%;
-  transform: translate(-50%, -50%) rotate(90deg);
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-  -moz-transform: translate(-50%, -50%) rotate(90deg);
-  -ms-transform: translate(-50%, -50%) rotate(90deg);
-  -o-transform: translate(-50%, -50%) rotate(90deg);
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 /*----------BG VIDEO FOR LAND/WATER SECTION STYLING----------*/
