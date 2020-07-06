@@ -571,11 +571,13 @@ body {
 .tour-guide-heading {
   padding: 3rem 0 2rem;
   font-size: 2.75rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(152, 151, 151);
 }
 
 .tour-guide-container {
   max-width: 90rem;
   margin: 0 auto;
+  padding: 0.5rem;
 }
 
 .tour-guide-person {
@@ -597,7 +599,7 @@ body {
 .guide-img {
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 /*========================================================================/
@@ -695,7 +697,6 @@ body {
 
 .section-go-booking {
   margin-top: 5rem;
-  border: 2px solid blue;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 2rem;
 }
@@ -710,10 +711,11 @@ body {
 .booking-header {
   margin: 2rem 0;
   font-size: 2.75rem;
-  font-weight: bold;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(152, 151, 151);
 }
 
 .booking-card-title {
+  margin-top: 3rem;
   padding: 2rem;
 }
 
@@ -723,12 +725,17 @@ body {
   text-align: center;
   margin: 2rem;
   background-color: aquamarine;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .booking-card-info {
@@ -746,8 +753,16 @@ body {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.booking-card-more {
+  width: 15rem;
+  margin-top: 5rem;
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid black;
 }
 
 .booking-card-info ul {
@@ -757,6 +772,11 @@ body {
 
 .booking-card-info ul li {
   margin: 1rem 0;
+}
+
+.booking-card-info .price {
+  margin-top: 2rem;
+  font-size: 2.5rem;
 }
 
 .booking-card::before {
@@ -782,6 +802,15 @@ body {
 .booking-card:hover::before {
   width: 100%;
   height: 100%;
+}
+
+.booking-card:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 .booking-card:hover .booking-card-info {
