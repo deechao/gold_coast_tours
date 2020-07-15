@@ -30,24 +30,25 @@
   </head>
   <body>
     <!---------START OF HEADER---------->
-    <header class="main-header">
+    <header class="header">
       <!-------FIRST IMG IN HEADER------->
-      <div class="paddle"></div>
+      <div class="header--paddle"></div>
       <!-------SECOND IMG IN HEADER------->
-      <div class="boat"></div>
+      <div class="header--boat"></div>
       <!-----TITLE/COMPANY NAME IN HEADER----->
-      <div class="title">
-        <h1 class="main-title">
-          <span class="gold">g</span>old <span class="gold">c</span>oast tours
+      <div class="header__title">
+        <h1 class="header--main-title">
+          <span class="header--gold">g</span>old
+          <span class="header--gold">c</span>oast tours
         </h1>
-        <h2 class="sub-title">excitement begins!</h2>
+        <h2 class="header--sub-title">excitement begins!</h2>
         <!--------CTA BUTTON--------->
-        <a class="btn-cta" href="#booking">let's have fun!</a>
+        <a class="btn--cta" href="#booking">let's have fun!</a>
       </div>
     </header>
     <!----------END OF HEADER---------->
     <!----------START OF MAIN---------->
-    <main class="main-container">
+    <main class="main">
       <section class="section-go tour-info">
         <h2 class="tour-info-heading">landside life tour</h2>
         <div class="tour-info-p">
@@ -199,42 +200,6 @@
           <!-----END OF IMG HOVER ROTATE CARDS----->
         </div>
       </section>
-      <section class="tour-guide">
-        <h2 class="tour-guide-heading">meet your tour guides!</h2>
-        <div class="tour-guide-container">
-          <div class="tour-guide-person">
-            <div class="guide-img-contain">
-              <img
-                src="img/tourguide1.jpg"
-                alt="man with beard"
-                class="guide-img"
-              />
-            </div>
-            <p class="tour-guide-p">
-              with 5 years of experience, chris will plan the right landside
-              life tour for you!
-            </p>
-          </div>
-          <div class="tour-guide-person">
-            <p class="tour-guide-p">
-              as a former lifeguard, rest assure that your waterfront fun tour
-              with rachel will also be a safe one!
-            </p>
-            <div class="guide-img-contain">
-              <img src="img/tourguide2.jpg" alt="woman" class="guide-img" />
-            </div>
-          </div>
-          <div class="tour-guide-person">
-            <div class="guide-img-contain">
-              <img src="img/tourguide3.jpg" alt="man" class="guide-img" />
-            </div>
-            <p class="tour-guide-p">
-              whether on lake or land, eric has experience guiding in both
-              fields and will mix and match your tour for the best experience!
-            </p>
-          </div>
-        </div>
-      </section>
       <section class="section-go section-go-scale">
         <h3 class="section-scale-header">more adventures below!</h3>
         <!-----START OF IMG HOVER SCALE----->
@@ -266,6 +231,38 @@
           />
         </div>
         <!-------END OF IMG HOVER SCALE------->
+      </section>
+      <section class="tour-guide">
+        <h2 class="tour-guide-heading">meet your tour guides!</h2>
+        <div class="tour-guide-container">
+          <div class="tour-guide-person">
+            <div class="guide-img-contain">
+              <img src="img/tourguide1.jpg" alt="chris" class="guide-img" />
+            </div>
+            <p class="tour-guide-p">
+              with 5 years of experience, chris will plan the right landside
+              life tour for you!
+            </p>
+          </div>
+          <div class="tour-guide-person">
+            <p class="tour-guide-p">
+              as a former lifeguard, rest assure that your waterfront fun tour
+              with rachel will also be a safe one!
+            </p>
+            <div class="guide-img-contain">
+              <img src="img/tourguide2.jpg" alt="rachael" class="guide-img" />
+            </div>
+          </div>
+          <div class="tour-guide-person">
+            <div class="guide-img-contain">
+              <img src="img/tourguide3.jpg" alt="eric" class="guide-img" />
+            </div>
+            <p class="tour-guide-p">
+              whether on lake or land, eric has experience guiding in both
+              fields and will mix and match your tour for the best experience!
+            </p>
+          </div>
+        </div>
       </section>
       <!-------START OF BOOKING CARDS SECTION------->
       <section class="section-go go-booking">
@@ -307,7 +304,7 @@
             <div class="booking-card-info">
               <ul>
                 <li>mix n match activities</li>
-                <li>choose from land and water activities</li>
+                <li>choose from land &amp water activities</li>
                 <li>choose 4 from each tour</li>
               </ul>
               <p class="price">$599</p>
